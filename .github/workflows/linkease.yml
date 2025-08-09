@@ -36,7 +36,7 @@ jobs:
     - name: Clone packages
       run: |
         cd $GITHUB_WORKSPACE
-        chmod +x .github/diy/openwrt_package.sh
+        chmod +x .github/diy/linkease.sh
         git clone -b openwrt-24.10 https://github.com/zhiern/package_new_linkease.git ${{matrix.target}}
         cd ${{matrix.target}}
         git rm -r --cache * >/dev/null 2>&1 &
